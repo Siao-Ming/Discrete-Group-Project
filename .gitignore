@@ -1,32 +1,1364 @@
-# Prerequisites
-*.d
+#include <iostream>
+#include <cstring>
+#include <string>
+#include <conio.h>
+#include <cstdlib>
+#include <cmath>
+#include <windows.h>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+void introduct()
+{
+	system("CLS");
+	cout << "--------------------------------" << endl;
+	cout << "|Welcome to Discrete Structure!|" << endl;
+	cout << "--------------------------------" << endl;
+	cout << "Which lesson would you want to take?" << endl;
+	cout << "[A] - Set Theory" << endl;
+	cout << "[B] - Sequences" << endl;
+	cout << "[C] - GCD & LCM" << endl;
+	cout << "[D] - " << endl;
+	cout << "[E] - " << endl;
+	cout << "[X] - Exit" << endl;
+	cout << "Your choice is: ";
+}
 
-# Precompiled Headers
-*.gch
-*.pch
+void Cazzey()
+{
+	int ctr1 = 0,ctr = 0;
+	char ans;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+	cout<<"==========***GCD QUIZ***==========\n\n";
+	cout<<"***Part 1 of 2***\n\n";
+	
+	
+	cout<<"1.) What is the GCD of 100 and 360?\n";
+	cout<<"a.) 20\n";
+	cout<<"b.) 30\n";
+	cout<<"c.) 40\n";
+	cout<<"d.) 50\n";
+	cout<<"Answer: ";//a
+	cin>>ans;
+	if(ans=='a'){
+		ctr1++;}
+	
+	
+	cout<<"\n\n2.) What is the GCD of 24 and 10?\n";
+	cout<<"a.) 8\n";
+	cout<<"b.) 6\n";
+	cout<<"c.) 4\n";
+	cout<<"d.) 2\n";
+		cout<<"Answer: ";//d
+	cin>>ans;
+	if(ans=='d'){
+		ctr1++;}
+		
+	
+	cout<<"\n\n3.) What is the GCD of 81 and 18?\n";
+	cout<<"a.) 3\n";
+	cout<<"b.) 6\n";
+	cout<<"c.) 9\n";
+	cout<<"d.) 12\n";
+		cout<<"Answer: ";//c
+	cin>>ans;
+	if(ans=='c'){
+		ctr1++;}
+		
+		
+	cout<<"\n\n4.) What is the GCD of 720 and 1200?\n";
+	cout<<"a.) 240\n";
+	cout<<"b.) 250\n";
+	cout<<"c.) 260\n";
+	cout<<"d.) 270\n";
+		cout<<"Answer: ";//a
+	cin>>ans;
+	if(ans=='a'){
+		ctr1++;}
+		
+	
+	cout<<"\n\n5.) What is the GCD of 999 and 555?\n";
+	cout<<"a.) 444\n";
+	cout<<"b.) 333\n";
+	cout<<"c.) 222\n";
+	cout<<"d.) 111\n";
+		cout<<"Answer: ";//d
+	cin>>ans;
+	if(ans=='d'){
+		ctr1++;}
+	
+	cout<<"\n\n6.) What is the GCD of 400 and 750?\n";
+	cout<<"a.) 20\n";
+	cout<<"b.) 30\n";
+	cout<<"c.) 40\n";
+	cout<<"d.) 50\n";
+		cout<<"Answer: ";//d
+	cin>>ans;
+	if(ans=='d'){
+		ctr1++;}
+		
+	cout<<"\n\n7.) What is the GCD of 2222 and 3333?\n";
+	cout<<"a.) 4444\n";
+	cout<<"b.) 3323\n";
+	cout<<"c.) 2222\n";
+	cout<<"d.) 1111\n";
+		cout<<"Answer: ";//d
+	cin>>ans;
+	if(ans=='d'){
+		ctr1++;}
+	
+	cout<<"\n\n8.) What is the GCD of 390 and 870?\n";
+	cout<<"a.) 30\n";
+	cout<<"b.) 20\n";
+	cout<<"c.) 10\n";
+	cout<<"d.) 80\n";
+		cout<<"Answer: ";//a
+	cin>>ans;
+	if(ans=='a'){
+		ctr1++;}
+		
+	cout<<"\n\n9.) What is the GCD of 5555 and 8500?\n";
+	cout<<"a.) 5\n";
+	cout<<"b.) 10\n";
+	cout<<"c.) 15\n";
+	cout<<"d.) 20\n";
+		cout<<"Answer: ";//a
+	cin>>ans;
+	if(ans=='a'){
+		ctr1++;}
+		
+	cout<<"\n\n10.) What is the GCD of 75 and 250?\n";
+	cout<<"a.) 10\n";
+	cout<<"b.) 15\n";
+	cout<<"c.) 25\n";
+	cout<<"d.) 35\n";
+		cout<<"Answer: ";//c
+	cin>>ans;
+	if(ans=='c'){
+		ctr1++;}
+	
+	system("cls");
 
-# Fortran module files
-*.mod
-*.smod
+	cout<<"==========***LCM QUIZ***==========\n\n";
+	cout<<"***Part 2 of 2***\n\n";
+	
+	
+	cout<<"1.) What is the LCM of 6 and 9?\n";
+	cout<<"a.) 15\n";
+	cout<<"b.) 30\n";
+	cout<<"c.) 45\n";
+	cout<<"d.) 60\n";
+	cout<<"Answer: ";//a
+	cin>>ans;
+	if(ans=='a'){
+		ctr++;}
+	
+	
+	cout<<"\n\n2.) What is the LCM of 4 and 9?\n";
+	cout<<"a.) 24\n";
+	cout<<"b.) 36\n";
+	cout<<"c.) 54\n";
+	cout<<"d.) 28\n";
+		cout<<"Answer: ";//b
+	cin>>ans;
+	if(ans=='b'){
+		ctr++;}
+		
+	
+	cout<<"\n\n3.) What is the LCM of 80 and 60?\n";
+	cout<<"a.) 180\n";
+	cout<<"b.) 320\n";
+	cout<<"c.) 240\n";
+	cout<<"d.) 120\n";
+		cout<<"Answer: ";//c
+	cin>>ans;
+	if(ans=='c'){
+		ctr++;}
+		
+		
+	cout<<"\n\n4.) What is the LCM of 120 and 320?\n";
+	cout<<"a.) 1120\n";
+	cout<<"b.) 680\n";
+	cout<<"c.) 540\n";
+	cout<<"d.) 960\n";
+		cout<<"Answer: ";//d
+	cin>>ans;
+	if(ans=='d'){
+		ctr++;}
+		
+	
+	cout<<"\n\n5.) What is the LCM of 450 and 1250?\n";
+	cout<<"a.) 9800\n";
+	cout<<"b.) 11250\n";
+	cout<<"c.) 10120\n";
+	cout<<"d.) 8640\n";
+		cout<<"Answer: ";//b
+	cin>>ans;
+	if(ans=='b'){
+		ctr++;}
+		
+	cout<<"\n\n6.) What is the LCM of 200 and 80?\n";
+	cout<<"a.) 400\n";
+	cout<<"b.) 500\n";
+	cout<<"c.) 600\n";
+	cout<<"d.) 700\n";
+		cout<<"Answer: ";//a
+	cin>>ans;
+	if(ans=='a'){
+		ctr++;}
+		
+	cout<<"\n\n7.) What is the LCM of 450 and 250?\n";
+	cout<<"a.) 1150\n";
+	cout<<"b.) 2250\n";
+	cout<<"c.) 3350\n";
+	cout<<"d.) 4450\n";
+		cout<<"Answer: ";//b
+	cin>>ans;
+	if(ans=='b'){
+		ctr++;}
+		
+	cout<<"\n\n8.) What is the LCM of 210 and 150 ?\n";
+	cout<<"a.) 970\n";
+	cout<<"b.) 1030\n";
+	cout<<"c.) 1070\n";
+	cout<<"d.) 1050\n";
+		cout<<"Answer: ";//d
+	cin>>ans;
+	if(ans=='d'){
+		ctr++;}
+		
+	cout<<"\n\n9.) What is the LCM of 900 and 600?\n";
+	cout<<"a.) 1200\n";
+	cout<<"b.) 1800\n";
+	cout<<"c.) 1900\n";
+	cout<<"d.) 2000\n";
+		cout<<"Answer: ";//b
+	cin>>ans;
+	if(ans=='b'){
+		ctr++;}
+		
+	cout<<"\n\n10.) What is the LCM of 4200 and 2100?\n";
+	cout<<"a.) 2500\n";
+	cout<<"b.) 3800\n";
+	cout<<"c.) 4200\n";
+	cout<<"d.) 5000\n";
+		cout<<"Answer: ";//c
+	cin>>ans;
+	if(ans=='c'){
+		ctr++;}
+	
+		
+		cout<<"\n\nYour Grade is : "<<ctr+ctr1<<"/20";
+}
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+int Steve()
+{
+	float counter;
+	int choice;
+	char choice1;
+	int answer;
+	int answer2;
+	int answer3;
+	cout<<"\t\t\t\t|--------------------------------------------------------|"<<endl;
+	cout<<"\t\t\t\t|               NUMBER SEQUENCE TEST                     |"<<endl;
+	cout<<"\t\t\t\t|--------------------------------------------------------|";
+	cout<<"\n\n\t\t\t\tDo you	 want to start the test?"<<endl;
+    cout<<"\n\t\t\t\tPress 1 for Yes \n\t\t\t\tPress 2 for No"<<endl;
+	cout<<"\t\t\t\t-----------------------------"<<endl;
+	cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+    cin>>choice;
+    cout<<endl;
+	if(choice==1)
+	{
+		system("cls");
+		begin:
+		cout<<"Let the The Test Begin"<<endl;
+		cout<<"Please Choose How Many Questions You Want To Answer"<<endl;
+		cout<<"A.5       B.10 "<<endl;
+		cout<<"Please Enter Your Answer Here: ";
+		cin>>choice1;
+		switch((toupper(choice1)))
+		{	
+			case 'A':    
+				system("cls");
+				cout<<"1.Look at this series: 2, 1, (1/2), (1/4), ... What number should come next?";
+				cout<<"\n1.(1/3)\n2.(1/8)\n3.(2/8)\n4.(1/16)"<<endl;
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+				if (answer==2)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+						cout<<"Incorrect"<<endl;
+				}
+				cout<<"\n2.Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?";
+				cout<<"\n1.7\n2.10\n3.12\n4.13";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			    if (answer==2)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+					cout<<"\n3.Look at this series: 36, 34, 30, 28, 24, ... What number should come next?";
+					cout<<"\n1.20\n2.22\n3.23\n4.26";
+					cout<<"\t\t\t\t-----------------------------"<<endl;
+					cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+					cin>>answer;
+			    if (answer==2)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"\n4.Look at this series: 22, 21, 23, 22, 24, 23, ... What number should come next?";
+				cout<<"\n1.22\n2.24\n3.25\n4.26";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			    if (answer==3)
+				{
+				cout<<"Correct"<<endl;
+				counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"\n5.Look at this series: 53, 53, 40, 40, 27, 27, ... What number should come next?";
+				cout<<"\n1.12\n2.14\n3.27\n4.53";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			    if (answer==2)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;	
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"Total score is "<<counter<<" /5"<<endl;
+				cout<<"Do you want to Take the test again?"<<endl;
+				cout<<"1.Yes    2.No";
+				cin>>answer2;
+				if(answer2==1)
+				{
+					goto begin;
+				}
+				else
+				{
+					cout<<"Thank you For Taking the Test";
+				}
+			case 'B':
+				cout<<"1.Look at this series: 2, 1, (1/2), (1/4), ... What number should come next?";
+				cout<<"\n1.(1/3)\n2.(1/8)\n3.(2/8)\n4.(1/16)"<<endl;
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+				if (answer==2)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"\n2.Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?";
+				cout<<"\n1.7\n2.10\n3.12\n4.13";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			     if (answer==2)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"\n3.Look at this series: 36, 34, 30, 28, 24, ... What number should come next?";
+				cout<<"\n1.20\n2.22\n3.23\n4.26";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			    if (answer==2)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"\n4.Look at this series: 22, 21, 23, 22, 24, 23, ... What number should come next?";
+				cout<<"\n1.22\n2.24\n3.25\n4.26";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			     if (answer==3)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"\n5.Look at this series: 53, 53, 40, 40, 27, 27, ... What number should come next?";
+				cout<<"\n1.12\n2.14\n3.27\n4.53";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			    if (answer==2)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}	
+				cout<<"\n6.Look at this series: 21, 9, 21, 11, 21, 13, 21, ... What number should come next?";						
+				cout<<"\n1.14\n2.15\n3.21\n4.23";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			    if (answer==2)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"\n7.Look at this series: 58, 52, 46, 40, 34, ... What number should come next?";						
+				cout<<"\n1.26\n2.28\n3.30\n4.32";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			     if (answer==2)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"\n8.Look at this series: 3, 4, 7, 8, 11, 12, ... What number should come next?";						
+				cout<<"\n1.7\n2.10\n3.14\n4.15";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			    if (answer==4)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"\n9.Look at this series: 8, 22, 8, 28, 8, ... What number should come next?";						
+				cout<<"\n1.9\n2.29\n3.32\n4.34";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			     if (answer==4)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"\n10.Look at this series: 31, 29, 24, 22, 17, ... What number should come next?";						
+				cout<<"\n1.15\n2.14\n3.13\n4.12";
+				cout<<"\t\t\t\t-----------------------------"<<endl;
+				cout<<"\t\t\t\tPlease Enter Your Answer Here: ";
+				cin>>answer;
+			    if (answer==1)
+				{
+					cout<<"Correct"<<endl;
+					counter=counter+1;
+					
+				}
+				else
+				{
+					cout<<"Incorrect"<<endl;
+				}
+				cout<<"Total score is "<<counter<<" /10"<<endl;
+				cout<<"Do you want to Take the test again?" << endl;
+				cout<<"1.Yes    2.No";
+				cin>>answer2;
+				if(answer2==1)
+				{
+					goto begin;
+				}
+				else
+				{
+					cout<<"Thank you For Taking the Test";
+				}
+			default:
+			break;
+			}
+			}
+		else if (choice==2)
+		{
+			cout << "\t\t\t\tThank you for your time!" << endl;
+		}
+		else
+		{
+			cout << "\t\t\t\tYour choice is not within range!" << endl;
+		}
+		system("Pause");
+		return 0;
+	}
 
-# Executables
-*.exe
-*.out
-*.app
+class setboi
+{
+private:
+	int *x;
+	int size;
+	char * name;
+	bool *checker;
+public:
+	setboi();
+	setboi(setboi*);
+	void setsetboi();
+	int getsetboi(int);
+	bool getchecker(int);
+	int getsize();
+	char getname();
+	void displayset();
+	void displayset(int a);
+	void arrange();
+	void displayunion(setboi*);
+	void displayintersection(setboi*);
+	void displaydifference(setboi*);
+	void displayproduct(setboi*);
+};
+int mystoi(char*);
+int mycin(int);
+int shortmycin(int);
+void mycin(char *);
+void gotoxy(int x, int y);
+bool menuoftwo(string, string, int);
+int menuofsix(string, string, string, string, string, string);
+setboi::setboi()
+{
+	system("cls");
+	int input = 0;
+	char inputs[10];
+	name = new char;
+	gotoxy(8, 22);
+	cout << "Type in a letter, Enter to confirm";
+	gotoxy(8, 6);
+	cout << "What is the name of the current set: ";
+	mycin(inputs);
+	gotoxy(8, 22);
+	cout << "Type in a number from 0 to 9, Enter to confirm";
+	gotoxy(8, 7);
+	cout << "What is the Cardinality of Set" << inputs <<  " : ";
+	input = shortmycin(input);
+	size = input - 1;
+	checker = new bool[100];
+	x = new int[input];
+	*name = inputs[0];
+}
+setboi::setboi(setboi *c)
+{
+	system("cls");
+	int input = 0;
+	char inputs[10];
+	name = new char;
+	bool exit = 1;
+	while (exit)
+	{
+		gotoxy(8, 22);
+		cout << "Type in a letter, Enter to confirm";
+		gotoxy(8, 6);
+		cout << "What is the name of the current set: ";
+		mycin(inputs);
+		gotoxy(8, 22);
+		cout << "Type in a number from 0 to 9, Enter to confirm";
+		if (inputs[0] == c->getname())
+		{
+			gotoxy(8, 7);
+			cout << "It is the same name as the previos set, Try again!";
+		}
+		else
+		{
+			exit = 0;
+			gotoxy(8, 7);
+			cout << "                                                    ";
+		}
+	}
+	gotoxy(8, 7);
+	cout << "What is the Cardinality of Set " << inputs << ": ";
+	input = shortmycin(input);
+	size = input - 1;
+	checker = new bool[100];
+	x = new int[input];
+	*name = inputs[0];
+}
+char setboi::getname()
+{
+	return name[0];
+}
+void setboi::displayset()
+{
+	int b = 0;
+	cout << "Set " << *name << " { ";
+	while (b <= size)
+	{
+		if (b == size)
+		{
+			cout << x[b] << " ";
+			b++;
+		}
+		else
+		{
+
+			cout << x[b] << ", ";
+			b++;
+		}
+	}
+	cout << "}";
+}
+void setboi::displayset(int a)
+{
+	int b = 0;
+	cout << "Set " << *name << " { ";
+	while (b < a)
+	{
+		if (b == size)
+		{
+			cout << x[b] << " ";
+			b++;
+		}
+		else
+		{
+
+			cout << x[b] << ", ";
+			b++;
+		}
+	}
+	cout << "}";
+}
+int setboi::getsetboi(int a)
+
+{
+	return x[a];
+}
+int setboi::getsize()
+
+{
+	return size;
+}
+void setboi::arrange()
+{
+	int temp = 0;
+	for (int a = 0; a < size; a++)
+	{
+		for (int b = 0; b < size; b++)
+		{
+			if (x[b] > x[b + 1])
+			{
+				temp = x[b];
+				x[b] = x[b + 1];
+				x[b + 1] = temp;
+			}
+		}
+	}
+}
+void setboi::setsetboi()
+{
+	int b = 0;
+	int input = 0;
+	bool exit = 1;
+	for (int a = 0; a <= 99; a++)
+	{
+		checker[a] = 0;
+	}
+	while (b <= size)
+	{
+		exit = 1;
+		while (exit)
+		{
+			gotoxy(8, 10);
+			displayset(b);
+			gotoxy(8, 22);
+			cout << "Type in a number from 0 to 9, Enter to confirm";
+			gotoxy(8, 12);
+			cout << "Set " << *name << " No. " << b + 1 << ":                     ";
+			gotoxy(40, 12);
+			x[b] = mycin(input);
+			if (checker[x[b]] == 0)
+			{
+				checker[x[b]] = 1;
+				exit = 0;
+				gotoxy(8, 13);
+				cout << "                                               ";
+			}
+			else
+			{
+				gotoxy(8, 13);
+				cout << "The element is already in the set, Try again\n";
+			}
+		}
+		b++;
+
+	}
+
+}
+bool setboi::getchecker(int a)
+
+{
+	return checker[a];
+}
+void setboi::displayunion(setboi* c)
+{
+	int b = 0;
+	cout << "Set " << *name << " U " << c->getname() << " { ";
+	while (b <= 99)
+	{
+		if (checker[b] || c->getchecker(b))
+		{
+			cout << b << ", ";
+		}
+		b++;
+	}
+	while (b < size)
+	{
+
+
+			cout << x[b] << ", ";
+			b++;
+
+	}
+	cout << "\b\b }";
+}
+void setboi::displayintersection(setboi* c)
+{
+	int b = 0;
+	cout << "Set " << *name << " ^ " << c->getname() << " { ";
+	while (b <= 99)
+	{
+		if (checker[b] && c->getchecker(b))
+		{
+			cout << b << ", ";
+		}
+		b++;
+	}
+	while (b < size)
+	{
+
+
+		cout << x[b] << ", ";
+		b++;
+
+	}
+	cout << "\b\b }";
+}
+void setboi::displaydifference(setboi * c)
+{
+	int b = 0;
+	cout << "Set " << *name << " - " << c->getname() << " {   ";
+	while (b <= size)
+	{
+		if (checker[x[b]] && c->getchecker(x[b]))
+		{
+			b++;
+		}
+		else
+		{
+			cout << x[b] << ", ";
+			b++;
+		}
+	}
+	cout << "\b\b }";
+}
+void setboi::displayproduct(setboi * c)
+{
+	int b = 0;
+	cout << "Set " << *name << " X " << c->getname() << ":\n {   ";
+	while (b <= size)
+	{
+		if (size == b)
+		{
+			for (int d = 0; d <= c->getsize(); d++)
+			{
+				cout << "(" << x[b] << ", " << c->getsetboi(d) << ") ";
+				cout << ", ";
+			}
+			cout << "\b\b }";
+			b++;
+		}
+		else
+		{
+			for (int d = 0; d <= c->getsize(); d++)
+			{
+				cout << "(" << x[b] << ", " << c->getsetboi(d) << ") ";
+				cout << ", ";
+			}
+			b++;
+		}
+	}
+}
+void Luluquisin()
+{
+	bool exit2 = 1;
+	while (exit2)
+	{
+		setboi a;
+		a.setsetboi();
+		setboi b(&a);
+		b.setsetboi();
+		bool exit = 1;
+		a.arrange();
+		b.arrange();
+		system("cls");
+		while (exit)
+		{
+			gotoxy(8, 3);
+			cout << "Set Operations";
+			gotoxy(8, 4);
+			a.displayset();
+			gotoxy(8, 5);
+			b.displayset();
+			gotoxy(8, 7);
+			cout << "Choose an Operation: ";
+			gotoxy(8, 24);
+			cout << "W to go UP, S to go DOWN, Enter to SELECT";
+			switch (menuofsix("Union", "Intersection", "Difference", "Cross Product", "Reset Sets", "Exit"))
+			{
+			case 1:
+			{
+				system("cls");
+				gotoxy(8, 20);
+				cout << "                                                                                   ";
+				gotoxy(8, 20);
+				a.displayunion(&b);
+				break; }
+			case 2:
+			{
+				system("cls");
+				gotoxy(8, 20);
+				cout << "                                                                                   ";
+				gotoxy(8, 20);
+				a.displayintersection(&b); break; }
+			case 3:
+			{
+				gotoxy(8, 20);
+				cout << "                                                                                   ";
+				gotoxy(8, 17);
+				cout << "Which Operation:";
+				if (menuoftwo("First Set - Last Set", "Last Set - First Set", 9))
+				{
+
+					system("cls");
+					gotoxy(8, 20);
+					a.displaydifference(&b);
+				}
+				else
+				{
+
+					system("cls");
+					gotoxy(8, 20);
+					b.displaydifference(&a);
+				} break; }
+			case 4:
+			{
+				gotoxy(8, 20);
+				cout << "                                                                                   ";
+				gotoxy(8, 17);
+				cout << "Which Operation:";
+				if (menuoftwo("First Set X Last Set", "Last Set X First Set", 9))
+				{
+
+					system("cls");
+					gotoxy(8, 20);
+					a.displayproduct(&b);
+				}
+				else
+				{
+					system("cls");
+					gotoxy(8, 20);
+					b.displayproduct(&a);
+				} break; }
+			case 5:
+			{
+				exit = 0;
+				break; }
+			case 6:
+			{
+				exit = 0;
+				exit2 = 0;
+				break;
+			}
+
+			}
+		}
+	}
+}
+
+																																					int main()
+	{
+		HANDLE color=GetStdHandle(STD_OUTPUT_HANDLE);
+		do
+		{
+			char picker;
+			introduct();
+			cin >> picker;
+			switch(toupper(picker))
+			{
+				case 'A':
+				{
+					cout << "\n------------------------" << endl;
+					cout << "| Welcome to SET THEORY! |" << endl;
+					cout << "--------------------------" << endl;
+					SetConsoleTextAttribute(color, 11);
+					printf("SETS");
+					SetConsoleTextAttribute(color, 10);
+					cout << " are a collection of objects ('elements'')" << endl;
+					cout << "A = {a1, a2, ..., an}   'A contains...'" << endl;
+					cout << "Order of elements is meaningless" << endl;
+					cout << "It does not matter how often the same element is listed." << endl;
+					system("Pause");
+					Luluquisin();
+					system("Pause");
+					break;
+				}
+				case 'B':
+				{
+					system("CLS");
+					Steve();
+					break;
+				}
+				case 'C':
+				{
+					cout << "\n--------------------------------------" << endl;
+					cout << "| Welcome to the GCD and LCM Lesson! |" << endl;
+					cout << "--------------------------------------" << endl;
+					cout << "Let a and b be integers, not both zero." << endl;
+					cout << "The largest integer d such that d | a and d | b is called the ";
+					SetConsoleTextAttribute(color, 7);
+					printf("Greatest Common Divisor");
+					SetConsoleTextAttribute(color, 10);
+					cout << " of a and b.\nThe greatest common divisor of a and b is denoted by gcd(a, b)." << endl;
+					system("Pause");
+					system("CLS");
+					Cazzey();
+					break;
+				}
+				case 'X':
+				{
+					cout << "Thank you for your time and have a nice day!" << endl;
+					break;
+				}
+				default:
+				{
+					cout << "Your choice is not within range!" << endl;
+					break;
+				}
+			}
+
+		} while (1);
+		system("Pause");
+		return 0;
+}
+int mystoi(char * x)
+{
+	char * y = x;
+	int z = 0;
+	int a = 0;
+	while (*y != '\0')
+	{
+		y++;
+		z++;
+	}
+	y = x;
+	z--;
+	for (int b = 0; z >= 0; b++)
+	{
+		a = a + ((*(&y[z]) - 48) * (pow(10, b)));
+		z--;
+	}
+	return a;
+
+}
+int mycin(int dummy)
+{
+	int charcounter = 0;
+	char x[5];
+	int a = 0;
+	char *y;
+	char *b;
+	y = x;
+	while (a != 13)
+	{
+		a = _getch();
+		if (a == 8)
+		{
+			if (y != x)
+			{
+				b = &x[0];
+				while (*b != '\0')
+				{
+					b++;
+				}
+				b--;
+				*b = '\0';
+				cout << "\b \b";
+				y--;
+				charcounter--;
+			}
+		}
+		else if ((a != 13 && isdigit(a)) && (charcounter < 2))
+		{
+			*y = (char)a;
+			y++;
+			*y = '\0';
+			cout << (char)a;
+			charcounter++;
+		}
+		else if (a == 13 && charcounter == 0)
+		{
+			a = 0;
+		}
+	}
+	cout << endl;
+	return mystoi(x);
+}
+int shortmycin(int dummy)
+{
+	int charcounter = 0;
+	char x[5];
+	int a = 0;
+	char *y;
+	char *b;
+	y = x;
+	while (a != 13)
+	{
+		a = _getch();
+		if (a == 8)
+		{
+			if (y != x)
+			{
+				b = &x[0];
+				while (*b != '\0')
+				{
+					b++;
+				}
+				b--;
+				*b = '\0';
+				cout << "\b \b";
+				y--;
+				charcounter--;
+			}
+		}
+		else if ((a != 13 && isdigit(a)) && (charcounter < 1))
+		{
+			*y = (char)a;
+			y++;
+			*y = '\0';
+			cout << (char)a;
+			charcounter++;
+		}
+		else if (a == 13 && charcounter == 0)
+		{
+			a = 0;
+		}
+	}
+	cout << endl;
+	return mystoi(x);
+}
+void mycin(char *x)
+{
+	int charcounter = 0;
+	int a = 0;
+	char *y;
+	char *b;
+	y = x;
+	while (a != 13)
+	{
+		a = _getch();
+		if (a == 8)
+		{
+			if (y != x)
+			{
+				b = &x[0];
+				while (*b != '\0')
+				{
+					b++;
+				}
+				b--;
+				*b = '\0';
+				cout << "\b \b";
+				y--;
+				charcounter--;
+			}
+		}
+		else if ((a != 13 && (charcounter < 1)) && isalpha(a))
+		{
+			*y = (char)a;
+			y++;
+			*y = '\0';
+			cout << (char)a;
+			charcounter++;
+		}
+		else if (a == 13 && charcounter == 0)
+		{
+			a = 0;
+		}
+	}
+	cout << endl;
+}
+
+int menuofsix(string a, string b, string c, string d, string e, string f)
+{
+	bool exist = true;
+	int arrow = 1;
+	int x;
+	gotoxy(10, 10);
+	cout << a;
+	gotoxy(10, 11);
+	cout << b;
+	gotoxy(10, 12);
+	cout << c;
+	gotoxy(10, 13);
+	cout << d;
+	gotoxy(10, 14);
+	cout << e;
+	gotoxy(10, 15);
+	cout << f;
+	gotoxy(8, 10);
+	cout << "->";
+	gotoxy(8, 11);
+	cout << "  ";
+	gotoxy(8, 12);
+	cout << "  ";
+	gotoxy(8, 13);
+	cout << "  ";
+	gotoxy(8, 14);
+	cout << "  ";
+	gotoxy(8, 15);
+	cout << "  ";
+	while (exist)
+	{
+		x = _getch();
+		if ((x == 119) || (x == 87))
+			arrow--;
+		else if ((x == 115) || (x == 83))
+			arrow++;
+		else if (x == 13)
+			exist = false;
+		if (arrow == 0)
+		{
+			arrow = 6;
+			gotoxy(8, 10);
+			cout << "  ";
+			gotoxy(8, 11);
+			cout << "  ";
+			gotoxy(8, 12);
+			cout << "  ";
+			gotoxy(8, 13);
+			cout << "  ";
+			gotoxy(8, 14);
+			cout << "  ";
+			gotoxy(8, 15);
+			cout << "->";
+		}
+		else if (arrow == 1)
+		{
+			gotoxy(8, 10);
+			cout << "->";
+			gotoxy(8, 11);
+			cout << "  ";
+			gotoxy(8, 12);
+			cout << "  ";
+			gotoxy(8, 13);
+			cout << "  ";
+			gotoxy(8, 14);
+			cout << "  ";
+			gotoxy(8, 15);
+			cout << "  ";
+		}
+		else if (arrow == 2)
+		{
+			gotoxy(8, 10);
+			cout << "  ";
+			gotoxy(8, 11);
+			cout << "->";
+			gotoxy(8, 12);
+			cout << "  ";
+			gotoxy(8, 13);
+			cout << "  ";
+			gotoxy(8, 14);
+			cout << "  ";
+			gotoxy(8, 15);
+			cout << "  ";
+		}
+		else if (arrow == 3)
+		{
+			gotoxy(8, 10);
+			cout << "  ";
+			gotoxy(8, 11);
+			cout << "  ";
+			gotoxy(8, 12);
+			cout << "->";
+			gotoxy(8, 13);
+			cout << "  ";
+			gotoxy(8, 14);
+			cout << "  ";
+			gotoxy(8, 15);
+			cout << "  ";
+		}
+		else if (arrow == 4)
+		{
+			gotoxy(8, 10);
+			cout << "  ";
+			gotoxy(8, 11);
+			cout << "  ";
+			gotoxy(8, 12);
+			cout << "  ";
+			gotoxy(8, 13);
+			cout << "->";
+			gotoxy(8, 14);
+			cout << "  ";
+			gotoxy(8, 15);
+			cout << "  ";
+		}
+		else if (arrow == 5)
+		{
+			gotoxy(8, 10);
+			cout << "  ";
+			gotoxy(8, 11);
+			cout << "  ";
+			gotoxy(8, 12);
+			cout << "  ";
+			gotoxy(8, 13);
+			cout << "  ";
+			gotoxy(8, 14);
+			cout << "->";
+			gotoxy(8, 15);
+			cout << "  ";
+		}
+		else if (arrow == 6)
+		{
+			gotoxy(8, 10);
+			cout << "  ";
+			gotoxy(8, 11);
+			cout << "  ";
+			gotoxy(8, 12);
+			cout << "  ";
+			gotoxy(8, 13);
+			cout << "  ";
+			gotoxy(8, 14);
+			cout << "  ";
+			gotoxy(8, 15);
+			cout << "->";
+		}
+		else if (arrow == 7)
+		{
+			arrow = 1;
+			gotoxy(8, 10);
+			cout << "->";
+			gotoxy(8, 11);
+			cout << "  ";
+			gotoxy(8, 12);
+			cout << "  ";
+			gotoxy(8, 13);
+			cout << "  ";
+			gotoxy(8, 14);
+			cout << "  ";
+			gotoxy(8, 15);
+			cout << "  ";
+		}
+	}
+
+	return arrow;
+}
+bool menuoftwo(string a, string b, int n)
+{
+	bool exist = true;
+	int arrow = 1;
+	int x;
+	gotoxy(10, 9 + n);
+	cout << a;
+	gotoxy(10, 10 + n);
+	cout << b;
+	gotoxy(8, 9 + n);
+	cout << "->";
+	gotoxy(8, 10 + n);
+	cout << "  ";
+	while (exist)
+	{
+		x = _getch();
+		if ((x == 119) || (x == 87))
+			arrow++;
+		else if ((x == 115) || (x == 83))
+			arrow--;
+		else if (x == 13)
+			exist = false;
+		if (arrow == -1)
+		{
+			arrow = 1;
+			gotoxy(8, 9 + n);
+			cout << "->";
+			gotoxy(8, 10 + n);
+			cout << "  ";
+		}
+		else if (arrow == 0)
+		{
+			gotoxy(8, 9 + n);
+			cout << "  ";
+			gotoxy(8, 10 + n);
+			cout << "->";
+		}
+		else if (arrow == 1)
+		{
+			gotoxy(8, 9 + n);
+			cout << "->";
+			gotoxy(8, 10 + n);
+			cout << "  ";
+		}
+		else if (arrow == 2)
+		{
+			arrow = 0;
+			gotoxy(8, 9 + n);
+			cout << "  ";
+			gotoxy(8, 10 + n);
+			cout << "->";
+
+		}
+
+	}
+	return (bool)arrow;
+}
+void gotoxy(int x, int y)
+{
+	static HANDLE h = NULL;
+	if (!h)h = GetStdHandle(STD_OUTPUT_HANDLE);
+	COORD c = { x, y };
+	SetConsoleCursorPosition(h, c);
+}
+	
